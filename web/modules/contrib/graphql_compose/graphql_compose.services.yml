@@ -1,0 +1,19 @@
+services:
+  graphql_compose.datamanager:
+    class: Drupal\graphql_compose\DataManager
+    arguments:
+      - "@entity_type.manager"
+      - "@entity_field.manager"
+      - "@renderer"
+      - "@twig"
+      - "@module_handler"
+      - "@graphql_compose.language_inflector"
+
+  graphql_compose.english_inflector:
+    class: Symfony\Component\String\Inflector\EnglishInflector
+
+  graphql_compose.language_inflector:
+    class: Drupal\graphql_compose\LanguageInflector
+    arguments:
+      - "@module_handler"
+      - "@graphql_compose.english_inflector"

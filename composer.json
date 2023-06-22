@@ -20,12 +20,14 @@
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
+        "drupal/graphql": "^4.4",
+        "drupal/graphql_compose": "^1.0@beta",
         "drupal/next": "^1.6"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {

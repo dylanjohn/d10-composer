@@ -1,0 +1,14 @@
+name: 'GraphQL Compose'
+description: 'Toolkit for generating GraphQL schemas in Drupal (This code is based on the Open Social GraphQL module).'
+type: module
+core_version_requirement: ^9 || ^10
+dependencies:
+  - graphql:graphql
+  - drupal:node
+package: GraphQL
+hidden: false
+
+# Information added by Drupal.org packaging script on 2023-04-06
+version: '1.0.0-beta32'
+project: 'graphql_compose'
+datestamp: 1680806998
